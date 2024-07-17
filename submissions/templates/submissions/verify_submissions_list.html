@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<div class="formPage my-xl" >
+    <div  class="content-box"  >
+        <div class="formWrapper">
+
+
+        <h2 class="title">Verify Submissions</h2>
+
+
+        <div class="submissions-list">
+            <a href="{% url 'download_student_details' %}" class="download-button">Download All Student Details</a><br>
+            <a href="{% url 'download_verified_submissions' %}" class="download-button">Download Verified Submissions</a>
+            {% for submission in submissions %}
+            <div class="formWrapper">
+            <a href="{% url 'verify_submission_detail' submission.id %}" class="submission-item">
+                <span class="student-name">{{ submission.student.name }}</span>
+                <span class="student-id">{{ submission.student.student_id }}</span>
+            </a>
+        </div>
+            {% empty %}
+            <p>No submissions to verify.</p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

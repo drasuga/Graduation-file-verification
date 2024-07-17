@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block title %}Verify Submissions - File Verification System{% endblock %}
+
+{% block content %}
+<body >
+  <h3>Verify Submissions</h3>
+  {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <a href="{% url 'download_student_details' %}" class="download-button">Download All Student Details</a><br>
+    <a href="{% url 'download_verified_submissions' %}" class="download-button">Download Verified Submissions</a>
+  {% if submissions %}
+ 
+  
+    {% for submission in submissions %}
+    {% if submission.is_rejected == False %}
+    
+    <div class="formPage my-xl" >
+      <div  class="content-box"  >
+          <div class="formWrapper">
+        <h3>Submission by {{ submission.student.user.username }} ({{ submission.student.student_id }})</h3>
+        <br>
+
+        <form method="post">
+          {% csrf_token %}
+          <input type="hidden" name="submission_id" value="{{ submission.id }}">
+          
+          <label>
+            <input type="checkbox" name="highschool_certificate" 
+                   {% if submission.highschool_certificate %}checked{% endif %}>
+            High School Certificate
+          </label><br>
+          
+          <label>
+            <input type="checkbox" name="secondary_certificate" 
+                   {% if submission.secondary_certificate %}checked{% endif %}>
+            Secondary School Certificate
+          </label><br>
+          
+          Submitted on: {{ submission.timestamp }} <br>
+          <textarea name="verification_notes" placeholder="Add verification notes"></textarea><br>
+          <div class="content-box">
+          <button class="btn btn--sub btn--lg  my-md" type="submit" name="action" value="verify">Verify</button>
+          <button class="btn btn--sub btn--lg  my-md" type="submit" name="action" value="reject">Reject</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    {% endif %}
+    {% endfor %}
+
+  {% else %}
+    <p>No unverified submissions.</p>
+  
+  {% endif %}
+</body>
+{% endblock %}

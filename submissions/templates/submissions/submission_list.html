@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block title %}My Submissions - File Verification System{% endblock %}
+
+{% block content %}
+
+
+
+ 
+
+  <main class="formPage my-xl">
+    <div class="auth">
+        <div class="formWrapper">
+
+
+            <h2 >Your Submission</h2>
+            
+            
+            <ul>
+              {% if submission %}
+                    <li>
+                  Submitted on: {{ submission.timestamp }}<br>
+                  Status: {% if submission.is_verified %}<span class="tag tag--pill tag--main">
+                    <small>Verified</small>
+                  </span>{% elif submission.is_rejected == True %}<span class="tag tag--pill tag--main">
+                    <small>Rejected</small>
+                  </span>
+                  <p>The following document(s) is required:</p><br>
+                  {% if not submission.highschool_certificate %}
+                  <span style="font-weight: bold;">Highschool Certificate</span>
+                  {% endif %} <br>
+                  {% if not submission.secondary_certificate %}
+                  <span style="font-weight: bold;">Secondary School Certificate</span>
+                  {% endif %}
+                  {% else %} <span class="tag tag--pill tag--main">
+                    <small>Pending</small>
+                  </span>{% endif %}<br>
+                  {% if submission.is_verified %}
+                  <span style="font-weight: bold;">Certificate Status:</span>
+                    {% if submission.certificates_available %}
+                      Your certificate is available for collection
+                    {% else %}
+                      Certificates are not yet available
+                    {% endif %}
+                  {% endif %}
+                  {% if submission.verification_notes %}
+                  <br>
+                
+                    <span style="font-weight: bold;">Verification Notes: </span> {{ submission.verification_notes }}
+                  {% endif %}
+                </li>
+              {% endif %}
+            </ul>
+          </div>
+        </a>
+        </div>
+    </div>
+</main>
+
+
+{% endblock %}

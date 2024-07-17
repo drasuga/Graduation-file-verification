@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Set Certificates Available - File Verification System{% endblock %}
+
+{% block content %}
+  
+  {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+  {% endif %}
+  <main class="formPage my-xl">
+    <div class="auth">
+        <div class="formWrapper">
+          <h2>Set Certificates Available</h2>
+  <form method="post">
+    {% csrf_token %}
+    <span>Click the button below to notify all verified submissions that certificates are available.</span><br>
+    <button class="btn btn--sub btn--lg  my-md" type="submit">Set Certificates Available</button>
+  </form>
+  </div>
+</div>
+</main>
+{% endblock %}

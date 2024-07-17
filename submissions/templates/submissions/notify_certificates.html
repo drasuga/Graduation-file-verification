@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Notify Certificate Availability - File Verification System{% endblock %}
+
+{% block content %}
+  <h2>Notify Certificate Availability</h2>
+  {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+  {% endif %}
+  <form method="post">
+    {% csrf_token %}
+    {% if submissions %}
+      <ul>
+      {% for submission in submissions %}
+        <li>
+          <input type="checkbox" name="submission_ids" value="{{ submission.id }}" id="sub_{{ submission.id }}">
+          <label for="sub_{{ submission.id }}">
+            {{ submission.student.user.username }} ({{ submission.student.student_id }})
+          </label>
+        </li>
+      {% endfor %}
+      </ul>
+      <button type="submit">Notify Selected</button>
+    {% else %}
+      <p>No verified submissions without notification.</p>
+    {% endif %}
+  </form>
+{% endblock %}

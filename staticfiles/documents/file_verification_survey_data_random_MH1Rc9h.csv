@@ -1,0 +1,51 @@
+Age,Gender,Professional Background,UI Intuitiveness,Navigation Ease,Useful Features,Difficult Features,Speed,Accuracy,Reliability,Encountered Errors,Common Errors,Overall Satisfaction,Likes,Improvements,Recommend,Additional Comments
+18-24,Male,Other,Somewhat intuitive,Very easy,"Feature A, Feature B",Feature D,Very fast,Very accurate,Very reliable,No,"Error A, Error B",Neutral,User Interface,Improve Feature D,Probably not,Needs minor tweaks.
+55-64,Non-binary/Third gender,IT Professional,Neutral,Easy,Feature C,None,Neutral,Very inaccurate,Very unreliable,Yes,Error A,Very dissatisfied,User Interface,None,Definitely not,Great system!
+35-44,Non-binary/Third gender,Other,Somewhat unintuitive,Very difficult,"Feature A, Feature B",None,Neutral,Accurate,Very unreliable,Yes,"Error A, Error B",Very satisfied,"Speed, Accuracy",None,Probably,Great system!
+18-24,Prefer not to say,Researcher,Neutral,Difficult,"Feature A, Feature B",Feature D,Neutral,Very inaccurate,Unreliable,Yes,"Error A, Error B",Dissatisfied,"Speed, Accuracy",None,Probably not,Needs minor tweaks.
+65 or older,Female,Other,Very intuitive,Neutral,"Feature A, Feature B",Feature D,Very slow,Inaccurate,Very reliable,Yes,Error A,Very satisfied,"Speed, Accuracy",Improve Feature D,Definitely not,Great system!
+55-64,Prefer not to say,Researcher,Neutral,Very difficult,"Feature A, Feature B",Feature D,Very fast,Accurate,Neutral,Yes,"Error A, Error B",Very dissatisfied,User Interface,None,Probably not,Needs minor tweaks.
+55-64,Prefer not to say,IT Professional,Neutral,Easy,Feature C,None,Neutral,Neutral,Neutral,No,"Error A, Error B",Neutral,User Interface,Improve Feature D,Definitely,Needs minor tweaks.
+18-24,Prefer not to say,IT Professional,Neutral,Very difficult,"Feature A, Feature B",Feature D,Very slow,Inaccurate,Reliable,No,"Error A, Error B",Satisfied,User Interface,None,Probably not,Great system!
+18-24,Male,IT Professional,Somewhat intuitive,Very difficult,Feature C,None,Very fast,Very inaccurate,Very reliable,No,"Error A, Error B",Dissatisfied,User Interface,Improve Feature D,Definitely,Great system!
+55-64,Non-binary/Third gender,Other,Very unintuitive,Neutral,Feature C,Feature D,Slow,Inaccurate,Reliable,No,Error A,Satisfied,"Speed, Accuracy",None,Definitely not,Needs minor tweaks.
+35-44,Female,Other,Very intuitive,Very difficult,Feature C,Feature D,Slow,Accurate,Reliable,No,Error A,Satisfied,User Interface,Improve Feature D,Definitely not,Needs minor tweaks.
+35-44,Non-binary/Third gender,Student,Very intuitive,Difficult,Feature C,Feature D,Fast,Very accurate,Very unreliable,No,"Error A, Error B",Very satisfied,"Speed, Accuracy",None,Probably not,Great system!
+45-54,Prefer not to say,Student,Somewhat intuitive,Difficult,"Feature A, Feature B",None,Slow,Very accurate,Unreliable,No,Error A,Very dissatisfied,User Interface,Improve Feature D,Not sure,Great system!
+25-34,Female,Researcher,Somewhat unintuitive,Difficult,Feature C,Feature D,Very slow,Inaccurate,Neutral,No,"Error A, Error B",Very dissatisfied,"Speed, Accuracy",None,Definitely,Great system!
+18-24,Male,Student,Very unintuitive,Easy,"Feature A, Feature B",Feature D,Slow,Neutral,Reliable,No,Error A,Dissatisfied,"Speed, Accuracy",None,Not sure,Great system!
+55-64,Female,IT Professional,Very intuitive,Neutral,Feature C,None,Fast,Inaccurate,Very unreliable,No,Error A,Neutral,User Interface,Improve Feature D,Definitely not,Great system!
+Under 18,Prefer not to say,Student,Somewhat intuitive,Neutral,Feature C,Feature D,Neutral,Inaccurate,Very unreliable,Yes,"Error A, Error B",Neutral,"Speed, Accuracy",None,Not sure,Great system!
+35-44,Prefer not to say,Student,Neutral,Easy,Feature C,Feature D,Slow,Very accurate,Very unreliable,No,Error A,Neutral,User Interface,Improve Feature D,Probably,Needs minor tweaks.
+55-64,Non-binary/Third gender,Student,Very unintuitive,Easy,"Feature A, Feature B",Feature D,Fast,Accurate,Very unreliable,No,Error A,Dissatisfied,User Interface,None,Not sure,Great system!
+25-34,Female,Other,Neutral,Difficult,Feature C,None,Very fast,Neutral,Very reliable,Yes,"Error A, Error B",Neutral,User Interface,Improve Feature D,Definitely,Needs minor tweaks.
+18-24,Non-binary/Third gender,Researcher,Very intuitive,Easy,"Feature A, Feature B",None,Neutral,Very inaccurate,Very reliable,Yes,"Error A, Error B",Neutral,User Interface,Improve Feature D,Probably not,Needs minor tweaks.
+25-34,Prefer not to say,IT Professional,Very unintuitive,Difficult,Feature C,Feature D,Slow,Neutral,Very unreliable,No,"Error A, Error B",Dissatisfied,User Interface,Improve Feature D,Not sure,Needs minor tweaks.
+25-34,Prefer not to say,Researcher,Very intuitive,Easy,"Feature A, Feature B",None,Very slow,Inaccurate,Unreliable,No,Error A,Dissatisfied,"Speed, Accuracy",Improve Feature D,Definitely,Needs minor tweaks.
+45-54,Male,IT Professional,Very intuitive,Very easy,Feature C,Feature D,Fast,Accurate,Unreliable,No,"Error A, Error B",Satisfied,User Interface,None,Probably,Needs minor tweaks.
+35-44,Female,IT Professional,Neutral,Neutral,Feature C,None,Slow,Neutral,Reliable,No,"Error A, Error B",Very satisfied,"Speed, Accuracy",None,Probably not,Needs minor tweaks.
+45-54,Female,Other,Somewhat intuitive,Very difficult,"Feature A, Feature B",Feature D,Slow,Accurate,Very unreliable,No,"Error A, Error B",Neutral,"Speed, Accuracy",Improve Feature D,Definitely not,Needs minor tweaks.
+55-64,Female,IT Professional,Very unintuitive,Difficult,"Feature A, Feature B",None,Neutral,Very inaccurate,Very reliable,No,Error A,Dissatisfied,"Speed, Accuracy",Improve Feature D,Probably not,Great system!
+Under 18,Male,Student,Somewhat unintuitive,Very easy,Feature C,Feature D,Neutral,Very accurate,Reliable,No,Error A,Very dissatisfied,"Speed, Accuracy",Improve Feature D,Definitely,Needs minor tweaks.
+55-64,Non-binary/Third gender,Student,Very intuitive,Easy,"Feature A, Feature B",Feature D,Slow,Very inaccurate,Reliable,No,Error A,Very satisfied,User Interface,Improve Feature D,Probably,Great system!
+Under 18,Prefer not to say,Researcher,Neutral,Very easy,"Feature A, Feature B",Feature D,Very slow,Neutral,Reliable,Yes,Error A,Neutral,"Speed, Accuracy",Improve Feature D,Definitely,Great system!
+45-54,Prefer not to say,IT Professional,Very unintuitive,Very easy,Feature C,Feature D,Neutral,Accurate,Neutral,Yes,"Error A, Error B",Satisfied,User Interface,None,Not sure,Needs minor tweaks.
+18-24,Female,Student,Somewhat intuitive,Difficult,Feature C,Feature D,Very fast,Neutral,Very reliable,Yes,"Error A, Error B",Neutral,"Speed, Accuracy",Improve Feature D,Definitely,Great system!
+65 or older,Prefer not to say,Other,Somewhat unintuitive,Easy,"Feature A, Feature B",Feature D,Slow,Accurate,Neutral,No,Error A,Satisfied,"Speed, Accuracy",None,Not sure,Great system!
+55-64,Prefer not to say,Researcher,Neutral,Difficult,"Feature A, Feature B",None,Neutral,Very inaccurate,Unreliable,No,Error A,Satisfied,"Speed, Accuracy",None,Definitely,Needs minor tweaks.
+35-44,Male,Student,Very intuitive,Difficult,"Feature A, Feature B",Feature D,Neutral,Very inaccurate,Unreliable,No,Error A,Very dissatisfied,"Speed, Accuracy",None,Not sure,Needs minor tweaks.
+45-54,Non-binary/Third gender,IT Professional,Somewhat intuitive,Very difficult,"Feature A, Feature B",None,Very slow,Accurate,Reliable,No,Error A,Dissatisfied,User Interface,None,Probably not,Great system!
+45-54,Prefer not to say,Other,Somewhat intuitive,Difficult,Feature C,None,Very slow,Very accurate,Very reliable,Yes,Error A,Satisfied,User Interface,None,Probably not,Great system!
+Under 18,Male,Other,Very intuitive,Difficult,"Feature A, Feature B",Feature D,Fast,Very inaccurate,Reliable,No,"Error A, Error B",Dissatisfied,"Speed, Accuracy",None,Definitely,Needs minor tweaks.
+55-64,Male,Other,Very intuitive,Easy,Feature C,Feature D,Neutral,Very inaccurate,Neutral,Yes,Error A,Neutral,"Speed, Accuracy",None,Not sure,Great system!
+65 or older,Female,Other,Somewhat unintuitive,Easy,"Feature A, Feature B",None,Fast,Very accurate,Unreliable,No,"Error A, Error B",Neutral,User Interface,None,Definitely,Needs minor tweaks.
+25-34,Male,Other,Somewhat intuitive,Very easy,"Feature A, Feature B",None,Neutral,Very accurate,Very unreliable,Yes,Error A,Dissatisfied,User Interface,None,Not sure,Great system!
+55-64,Non-binary/Third gender,IT Professional,Somewhat unintuitive,Very difficult,"Feature A, Feature B",Feature D,Slow,Very inaccurate,Neutral,No,Error A,Very dissatisfied,"Speed, Accuracy",Improve Feature D,Definitely not,Great system!
+25-34,Female,Researcher,Somewhat unintuitive,Neutral,"Feature A, Feature B",Feature D,Very slow,Very accurate,Reliable,Yes,Error A,Very dissatisfied,"Speed, Accuracy",None,Probably not,Needs minor tweaks.
+35-44,Non-binary/Third gender,Researcher,Neutral,Very easy,Feature C,None,Neutral,Neutral,Reliable,No,"Error A, Error B",Dissatisfied,User Interface,None,Not sure,Great system!
+25-34,Non-binary/Third gender,Student,Somewhat intuitive,Difficult,Feature C,None,Slow,Accurate,Reliable,No,Error A,Satisfied,"Speed, Accuracy",None,Not sure,Great system!
+55-64,Non-binary/Third gender,Student,Somewhat intuitive,Difficult,"Feature A, Feature B",None,Fast,Accurate,Neutral,Yes,Error A,Very dissatisfied,User Interface,Improve Feature D,Not sure,Needs minor tweaks.
+35-44,Male,IT Professional,Somewhat unintuitive,Easy,Feature C,None,Fast,Very inaccurate,Reliable,No,"Error A, Error B",Dissatisfied,"Speed, Accuracy",None,Definitely,Great system!
+45-54,Prefer not to say,Student,Very intuitive,Very difficult,"Feature A, Feature B",Feature D,Very fast,Inaccurate,Very unreliable,No,Error A,Dissatisfied,User Interface,None,Probably not,Needs minor tweaks.
+Under 18,Non-binary/Third gender,Other,Neutral,Neutral,"Feature A, Feature B",Feature D,Neutral,Neutral,Neutral,Yes,Error A,Very dissatisfied,"Speed, Accuracy",Improve Feature D,Probably not,Needs minor tweaks.
+45-54,Non-binary/Third gender,Researcher,Somewhat unintuitive,Difficult,Feature C,None,Slow,Inaccurate,Neutral,No,Error A,Very satisfied,User Interface,None,Definitely,Needs minor tweaks.

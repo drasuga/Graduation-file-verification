@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main class="formPage my-xl">
+    <div class="content-box">
+        <div class="formWrapper">
+<div class="container">
+    <h2 class="title">Set Certificates Available</h2>
+
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="download-buttons">
+       
+        <a href="{% url 'download_available_certificates' %}" class="download-button">Download Available Certificates</a>
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        <div class="card-container">
+            {% for submission in verified_submissions %}
+            <div class="card">
+                <div class="card-content">
+                    <input type="checkbox" name="submissions" value="{{ submission.id }}" id="submission_{{ submission.id }}">
+                    <label for="submission_{{ submission.id }}">
+                        {{ submission.student.name }} - {{ submission.student.student_id }}
+                    </label>
+                </div>
+            </div>
+            {% empty %}
+            <p>No verified submissions available.</p>
+            {% endfor %}
+        </div>
+        <button class="btn btn--sub btn--lg  my-md" type="submit" value="Submit">Set Certificates Available</button>
+    </form>
+</div>
+</div>
+</div>
+</main>
+{% endblock %}

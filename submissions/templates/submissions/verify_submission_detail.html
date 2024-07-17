@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="formPage my-xl" >
+    <div  class="content-box"  >
+        <div class="formWrapper">
+    <h2 class="title">Verify Submission</h2>
+
+    <div class="submission-details">
+        <p><strong>Student Name:</strong> {{ submission.student.name }}</p>
+        <p><strong>Student ID:</strong> {{ submission.student.student_id }}</p>
+        <p><strong>Programme:</strong> {{ submission.student.programme }}</p>
+        <p><strong>Session:</strong> {{ submission.student.session }}</p>
+        <p><strong>Submission Date:</strong> {{ submission.timestamp }}</p>
+        
+    </div>
+
+    <form method="post">
+        {% csrf_token %}
+        <input type="hidden" name="submission_id" value="{{ submission.id }}">
+        
+        <label>
+          <input type="checkbox" name="highschool_certificate" 
+                 {% if submission.highschool_certificate %}checked{% endif %}>
+          <strong>High School Certificate</strong>
+        </label><br>
+        
+        <label>
+          <input type="checkbox" name="secondary_certificate" 
+                 {% if submission.secondary_certificate %}checked{% endif %}>
+          <strong>Secondary School Certificate</strong>
+        </label><br>
+        
+        Submitted on: {{ submission.timestamp }} <br>
+        <textarea name="verification_notes" placeholder="Add verification notes"></textarea><br>
+        <div class="content-box">
+        <button class="btn btn--sub btn--lg  my-md" type="submit" name="action" value="verify">Verify</button>
+        <button class="btn btn--sub btn--lg  my-md" type="submit" name="action" value="reject">Reject</button>
+      </div>
+    </form>
+    
+  </div>
+</div>
+</div>
+{% endblock %}

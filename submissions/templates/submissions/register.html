@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Register - File Verification System{% endblock %}
+
+{% block content %}
+
+
+  <main class="formPage my-xl">
+    <div class="content-box">
+      <div class="auth__header text-center">
+
+        <h3>Account SignUp</h3>
+        <p>Create a new Student account</p>
+      </div>
+      <div class="formWrapper">  
+
+      <form class="form auth__form" method="post">
+        {% csrf_token %}
+
+
+        {% for field in form %}
+        <div class="form__field">
+          <label for="formInput#text">{{field.label}} </label>
+          {{ field }}
+
+          <!-- {% if field.help_text %}
+          <small>{{field.help_text }}</small>
+          {% endif %} -->
+
+          {% for error in field.errors %}
+            <p style="color: red;">{{error}}</p>
+          {% endfor %}
+        </div>
+        {% endfor %}
+    
+        <div class="auth__actions">
+          <input class="btn btn--sub btn--lg" type="submit" value="Sign Up" />
+        </div>
+      </form>
+      </div>
+      <div class="auth__alternative">
+        <p>Already have an Account?</p>
+        <a href="{% url 'login' %}">Log In</a>
+      </div>
+    </div>
+  </main>
+{% endblock %}
